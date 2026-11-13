@@ -6,7 +6,7 @@ let pedidos = [
 ];
 
 // Implemente abaixo as operações de gerenciamento dos pedidos.
-function cadastrarPedido() {
+export function cadastrarPedido() {
     let solicitarCodigo = Number(prompt("Digite o código do produto: "))
     let nomeCliente = prompt("Digite o Nome do Cliente: ")
     let valorPedido = prompt("Digite o Nome do Cliente: ")
@@ -27,7 +27,7 @@ function cadastrarPedido() {
     // TODO: solicitar os dados, validar e adicionar um novo pedido ao array.
 }
 
-function listarPedidos() {
+export function listarPedidos() {
     console.log('='*30)
     console.log("PEDIDOS LISTADOS")
     console.log('='*30)
@@ -41,7 +41,7 @@ function listarPedidos() {
     // TODO: listar os pedidos cadastrados.
 }
 
-function buscarPedido(codigo) {
+export function buscarPedido(codigo) {
     let solicitarCodigo = prompt("Digite o Código: ")
     for(const pedido of pedidos){
 
@@ -55,7 +55,7 @@ function buscarPedido(codigo) {
     // TODO: retornar o pedido correspondente ao código, se existir.
 }
 
-function entregarPedido(codigo) {
+export function entregarPedido(codigo) {
     let solicitarCodigo = prompt("Digite o Código: ")
 
     for (const pedido of pedidos){
@@ -65,7 +65,7 @@ function entregarPedido(codigo) {
             }
         }
     }
-    return `Valor do Pedido alterado para entregue`
+    return `Valor do Pedido alterado para entrega`
 
 
     // TODO: alterar a situação de entrega do pedido encontrado.

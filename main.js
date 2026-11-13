@@ -1,5 +1,9 @@
 import * as gerarResumoJSON from relatorios.js
 import * as exibirResumo from relatorios.js
+import  * as cadastrarPedido from pedidos.js
+import * as listarPedidos from pedidos.js
+import * as buscarPedido from pedido.js
+import * as entregarPedido from pedidos.js
 // Trabalho NP2 — fluxo principal.
 // Utilize as funções de pedidos.js e relatorios.js neste arquivo.
 
