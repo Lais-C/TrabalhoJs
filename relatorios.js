@@ -5,12 +5,12 @@ let pedidos = [
     { codigo: 102, cliente: "Bruno", valor: 18.00, entregue: true },
     { codigo: 103, cliente: "Carla", valor: 32.90, entregue: false }
 ];
-export function gerarResumoJSON() {
+export function gerarResumoJSON(pedidos) {
     // TODO: criar o objeto do resumo, converter com JSON.stringify() e exibir.
     let convertido=JSON.stringify(pedidos)
     return convertido
 }
-export function exibirResumo() {
+export function exibirResumo(pedidos) {
     // TODO: calcular e exibir total de pedidos, entregues, pendentes e valor total.
     let total=0
     let entregues=0
